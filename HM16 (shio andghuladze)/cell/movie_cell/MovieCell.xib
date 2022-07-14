@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="1qu-jt-JvV" customClass="MovieCell" customModule="HM15__shio_andghuladze_" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1qu-jt-JvV" id="cZc-YV-bGN">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6U3-FI-vJK">
+                        <rect key="frame" x="5" y="6" width="195" height="32"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEE-Fz-thW">
+                                <rect key="frame" x="0.0" y="0.0" width="195" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YBa-gm-bUt">
+                                <rect key="frame" x="0.0" y="16" width="195" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TaE-71-1bY">
+                        <rect key="frame" x="210" y="10" width="100" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="vzf-MX-XQN"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                        <connections>
+                            <action selector="onActionButtonClick:" destination="1qu-jt-JvV" eventType="touchUpInside" id="HNZ-qC-mF4"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="TaE-71-1bY" firstAttribute="top" secondItem="cZc-YV-bGN" secondAttribute="top" constant="10" id="UvE-uC-JLX"/>
+                    <constraint firstAttribute="bottom" secondItem="TaE-71-1bY" secondAttribute="bottom" constant="10" id="c0F-92-e2B"/>
+                    <constraint firstItem="6U3-FI-vJK" firstAttribute="centerY" secondItem="cZc-YV-bGN" secondAttribute="centerY" id="djS-Mg-OjB"/>
+                    <constraint firstItem="6U3-FI-vJK" firstAttribute="leading" secondItem="cZc-YV-bGN" secondAttribute="leading" constant="5" id="e8p-eJ-4NI"/>
+                    <constraint firstItem="TaE-71-1bY" firstAttribute="leading" secondItem="6U3-FI-vJK" secondAttribute="trailing" constant="10" id="u0C-Np-xfv"/>
+                    <constraint firstAttribute="trailing" secondItem="TaE-71-1bY" secondAttribute="trailing" constant="10" id="uMk-ZY-L7D"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="NPE-7X-wkZ"/>
+            <color key="backgroundColor" red="0.83757579329999998" green="0.77606314080000005" blue="0.80789157040000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <connections>
+                <outlet property="actionButton" destination="TaE-71-1bY" id="0OL-4Y-1gC"/>
+                <outlet property="movieImdbLabel" destination="YBa-gm-bUt" id="CBD-AI-UC3"/>
+                <outlet property="movieTitleLabel" destination="ZEE-Fz-thW" id="r8z-GH-IoZ"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
+        </tableViewCell>
+    </objects>
+</document>
